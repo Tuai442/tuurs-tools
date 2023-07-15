@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="landing-style.css">
+    <link rel="stylesheet" type="text/css" href="landing-style-navbar.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img class="img" src="../assets/Rectangle 69.png"/>
+        <div class="header-container">
+            <header>
+                <div class="icon-container">
+                    <div class="logo">
+                        Logo
+                    </div>
+                    
+                    <img  class="hamburger" src="../assets/pajamas_hamburger.png" alt=" " >
+                    
+                </div>
+    
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li> 
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+    
+                <script>
+                    const hamburger = document.getElementsByClassName('hamburger')[0]
+                    const nav = document.getElementById('nav')
+                    hamburger.addEventListener('click', () => {
+                            nav.classList.toggle('active');
+                            console.log('clicked')
+    
+                        })
+                </script>
+            </header>
+        </div>
+
+    
+        <div class="section-container">
+            <section class="one">
+                <h1>Maak hier je oplossing</h1>
+                <p>Welkom bij TDN - jullie betrouwbare partner voor geavanceerde digitale oplossingen!</p>
+                <p>Bij TDN geloven we in de kracht van innovatie en technologie om bedrijven te helpen groeien. Ons team, is vastbesloten om op maat gemaakte apps, websites, desktop apps en softwareoplossingen te bieden die aansluiten bij jullie specifieke behoeften.</p>
+                <button>CONTACTEER NU</button>
+            </section>
+
+            <section class="two">
+                <h1>Onze diensten</h1>
+            </section>
+        </div>
+       
+       
+        
+
+        <script>
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+
+            console.log("Screen width: " + screenWidth + "px");
+            console.log("Screen height: " + screenHeight + "px");
+
+        </script>
+
+    </div>
+</body>
+</html>
